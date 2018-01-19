@@ -1,0 +1,16 @@
+Anotações:
+
+- Artigos:
+    - http://www.luiztools.com.br/post/como-criar-um-bot-de-compra-e-venda-de-bitcoin-usando-node-js/
+    - http://www.luiztools.com.br/post/como-criar-um-bot-de-compra-e-venda-de-bitcoin-usando-nodejs-2/
+- Arquivo ".env":
+    - 'PROFITABILITY':
+        A rentabilidade desejada que seu bot deve alcançar em decimal. (1.1 = 10% / 1.05 = 5%)
+        Quanto maior a rentabilidade desejada, mais irá demorar para que você consiga ter retorno
+        com seu bot e às vezes isso pode nunca acontecer. Exemplo, se sua PROFITABILITY é 1.2 (20%)
+        e você compra bitcoin hoje, vai demorar 20 dias para o bot vender se a moeda estiver
+        valorizando 1% ao dia. Claro que diversas técnicas podem reduzir ou aumentar esse prazo
+        (como uma queda da moeda ao invés de valorização), e cabe a você estudá-las
+        (como analisar os gráficos da moeda, por exemplo). Além disso, uma PROFITABILITY
+        inferior a 1.05 (5%) não é muito interessante pois você gasta quase isso com as taxas
+        do Mercado Bitcoin para um ciclo completo de depósito, compra, venda e saque de criptomoedas.
