@@ -42,7 +42,8 @@ MercadoBitcoin.prototype = {
             .headers('Accept', 'application/json')
             .end(function (response) {
                 try{
-                    success(JSON.parse(response.raw_body));
+                    if (response.raw_body)
+                        success(JSON.parse(response.raw_body));
                 }
                 catch(ex){ console.log(ex)}
         });
